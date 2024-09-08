@@ -146,11 +146,20 @@ return { -- LSP Configuration & Plugins
       --
       -- But for many setups, the LSP (`tsserver`) will work just fine
       tsserver = {},
-      html = {},
+      html = {
+        filetypes = { 'html', 'templ' },
+      },
       cssls = {},
       tailwindcss = {},
+      --[[ tailwindcss = {
+        filetypes = { 'templ', 'astro', 'javascript', 'typescript', 'react' },
+      }, ]]
       svelte = {},
       eslint_d = {},
+      templ = {},
+      --[[ htmx = {
+        filetypes = { 'html', 'templ' },
+      }, ]]
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},
